@@ -12,7 +12,7 @@ Tools & Technologies Used:
 - HTML5: Structure of the website
 - CSS3: Styling and layout
 - JavaScript: Interactivity and functionality
-- Vite (suggested): Modern build tool
+
 - Git & GitHub: Version control and hosting
 How to Run the Project Locally:
 1. Clone the repository
@@ -35,9 +35,8 @@ Suggestions for Enhancement:
 - Connect the contact form via EmailJS.
 - Deploy using GitHub Pages or Netlify.
 Contact Info (example):
-- LinkedIn: https://linkedin.com/in/your-profile
-- Email: your.email@example.com
-- Website: https://your-portfolio.com
+- LinkedIn: https://www.linkedin.com/in/gamal-hal-b7720419a/
+- Email:gamalhal.chi@gmail.com
+
 License:
 This project is licensed under the MIT License.
-Screenshot (optional):
