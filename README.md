@@ -41,4 +41,3 @@ Contact Info (example):
 License:
 This project is licensed under the MIT License.
 Screenshot (optional):
-Add a screenshot of the website in the images folder and refer to it in documentation.
