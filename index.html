@@ -1,58 +1,335 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>جمال حال - مطور واجهات أمامية | GamalHal Portfolio</title>
+    <meta
+      name="description"
+      content="مطور واجهات أمامية متخصص في تطوير المواقع الإلكترونية الحديثة"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- إضافة أيقونات Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GamalHal Portfolio</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
+  <body>
+    <!-- Header Section - قسم الهيدر -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__container">
+          <!-- Logo - الشعار -->
+          <div class="nav__logo" id="logoLink" style="cursor: pointer">
+            <h1 data-ar="جمال حال" data-en="Gamal Hal">جمال حال</h1>
+            <span data-ar="مطور واجهات أمامية" data-en="Frontend Developer"
+              >مطور واجهات أمامية</span
+            >
+          </div>
 
-<body>
-    <div class="container">
-        <div class="container__content">
-            <div class="container__textContent">
-                <p class="container__text">
-                    " Hi! I am a passionate Frontend Developer with a strong technical skill-set, attention to details and hard worker
-                    . I thrive on creating digital magic and elevating user experience to the next
-                    level. "
-                </p>
-                <div class="container__authorData">
-                    <p class="container__authorName">Gamal Hal</p>
-                    <p class="container__authorPosition">Frontend Developer</p>
-                </div>
-                <div class="container__socialLinks">
-                    <a class="container__socialLink" 
-                       href="https://www.facebook.com/gamal.hal" 
-                       target="_blank">
-                        <img class="container__socialImage" src="./images/facebook.svg" alt="facebook">
-                    </a>
-                    <a class="container__socialLink" 
-                       href="https://twitter.com/gamalhal"
-                       target="_blank">
-                        <img class="container__socialImage" src="./images/twitter.svg" alt="twitter">
-                    </a>
-                    <a class="container__socialLink" 
-                       href="https://www.linkedin.com/in/gamal-hal-b7720419a/"
-                       target="_blank">
-                        <img class="container__socialImage" src="./images/linkedin.svg" alt="linkedin">
-                    </a>
-                    <a class="container__socialLink" 
-                       href="#"
-                       target="_blank">
-                        <img class="container__socialImage" src="./images/youtube.svg" alt="youtube">
-                    </a>
-                </div>
-            </div>
-            <div class="container__imageContent">
-                <img class="container__image" src="./images/gamalhal.jpeg" alt="personal pic">
-            </div>
+          <!-- Navigation Menu - قائمة التنقل -->
+          <ul class="nav__menu">
+            <li>
+              <a
+                href="#home"
+                class="nav__link"
+                data-ar="الرئيسية"
+                data-en="Home"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav__link" data-ar="عني" data-en="About"
+                >عني</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav__link"
+                data-ar="اتصل بي"
+                data-en="Contact"
+                >اتصل بي</a
+              >
+            </li>
+          </ul>
+
+          <!-- Language and Theme Toggle - أزرار تغيير اللغة والوضع -->
+          <div class="nav__controls">
+            <!-- Language Toggle - زر تغيير اللغة -->
+            <button
+              class="nav__control-btn"
+              id="languageToggle"
+              title="تغيير اللغة / Change Language"
+            >
+              <i class="fas fa-globe"></i>
+              <span data-ar="EN" data-en="عربي">EN</span>
+            </button>
+
+            <!-- Theme Toggle - زر تغيير الوضع -->
+            <button
+              class="nav__control-btn"
+              id="themeToggle"
+              title="تغيير الوضع / Change Theme"
+            >
+              <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button - زر القائمة للموبايل -->
+          <div class="nav__toggle">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
-    </div>
-</body>
+      </nav>
+    </header>
 
-<script src="./scripts.js"></script>
+    <!-- Main Content - المحتوى الرئيسي -->
+    <main class="main">
+      <!-- Hero Section - قسم الترحيب -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="container__content">
+            <!-- Text Content - المحتوى النصي -->
+            <div class="container__textContent">
+              <p
+                class="container__text"
+                data-ar="مرحباً! أنا مطور واجهات أمامية شغوف بمهارات تقنية قوية، انتباه للتفاصيل وعامل مجتهد. أزدهر في خلق السحر الرقمي ورفع تجربة المستخدم إلى المستوى التالي."
+                data-en="Hi! I am a passionate Frontend Developer with strong technical skills, attention to detail and hard worker. I thrive on creating digital magic and elevating user experience to the next level."
+              >
+                "مرحباً! أنا مطور واجهات أمامية شغوف بمهارات تقنية قوية، انتباه
+                للتفاصيل وعامل مجتهد. أزدهر في خلق السحر الرقمي ورفع تجربة
+                المستخدم إلى المستوى التالي."
+              </p>
+
+              <!-- Author Information - معلومات المؤلف -->
+              <div class="container__authorData">
+                <p
+                  class="container__authorName"
+                  data-ar="جمال حال"
+                  data-en="Gamal Hal"
+                >
+                  جمال حال
+                </p>
+                <p
+                  class="container__authorPosition"
+                  data-ar="مطور واجهات أمامية"
+                  data-en="Frontend Developer"
+                >
+                  مطور واجهات أمامية
+                </p>
+              </div>
+
+              <!-- Social Media Links - روابط وسائل التواصل الاجتماعي -->
+              <div class="container__socialLinks">
+                <a
+                  class="container__socialLink"
+                  href="https://www.facebook.com/gamal.hal"
+                  target="_blank"
+                  rel="noopener"
+                  title="فيسبوك"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  class="container__socialLink"
+                  href="https://twitter.com/gamalhal"
+                  target="_blank"
+                  rel="noopener"
+                  title="تويتر"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  class="container__socialLink"
+                  href="https://www.linkedin.com/in/gamal-hal-b7720419a/"
+                  target="_blank"
+                  rel="noopener"
+                  title="لينكد إن"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  class="container__socialLink"
+                  href="#"
+                  target="_blank"
+                  title="يوتيوب"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Image Content - المحتوى الصوري -->
+            <div class="container__imageContent">
+              <img
+                class="container__image"
+                src="./images/gamalhal.jpeg"
+                alt="صورة شخصية لجمال حال"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section - قسم عني -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about__content">
+            <h2 class="about__title" data-ar="عني" data-en="About Me">عني</h2>
+            <div class="about__text">
+              <p
+                data-ar="أنا مطور واجهات أمامية متخصص في تطوير المواقع الإلكترونية الحديثة والتفاعلية. أعمل على تقديم حلول تقنية مبتكرة مع التركيز على تجربة المستخدم والتصميم الجذاب."
+                data-en="I am a Frontend Developer specialized in developing modern and interactive websites. I work on providing innovative technical solutions with focus on user experience and attractive design."
+              >
+                أنا مطور واجهات أمامية متخصص في تطوير المواقع الإلكترونية
+                الحديثة والتفاعلية. أعمل على تقديم حلول تقنية مبتكرة مع التركيز
+                على تجربة المستخدم والتصميم الجذاب.
+              </p>
+
+              <div class="skills">
+                <h3 data-ar="مهاراتي التقنية:" data-en="My Technical Skills:">
+                  مهاراتي التقنية:
+                </h3>
+                <div class="skills__list">
+                  <span class="skill">
+                    <i class="fab fa-html5"></i>
+                    HTML5
+                  </span>
+                  <span class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS3
+                  </span>
+                  <span class="skill">
+                    <i class="fab fa-js-square"></i>
+                    JavaScript
+                  </span>
+                  <span class="skill">
+                    <i class="fab fa-react"></i>
+                    React
+                  </span>
+                  <span class="skill">
+                    <i class="fas fa-code"></i>
+                    Next.js
+                  </span>
+                  <span
+                    class="skill"
+                    data-ar="التصميم المتجاوب"
+                    data-en="Responsive Design"
+                  >
+                    <i class="fas fa-mobile-alt"></i>
+                    Responsive Design
+                  </span>
+                  <span class="skill">
+                    <i class="fab fa-git-alt"></i>
+                    Git
+                  </span>
+                  <span class="skill">
+                    <i class="fab fa-node-js"></i>
+                    Node.js
+                  </span>
+                  <span class="skill">
+                    <i class="fas fa-database"></i>
+                    MongoDB
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section - قسم الفوتر -->
+    <footer id="contact" class="footer">
+      <div class="footer__container">
+        <!-- Contact Information - معلومات الاتصال -->
+        <div class="footer__contact">
+          <h3 data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h3>
+          <div class="contact__info">
+            <!-- Phone Number - رقم الهاتف -->
+            <div class="contact__item">
+              <i class="fas fa-phone"></i>
+              <a
+                href="https://wa.me/201274887580"
+                target="_blank"
+                class="contact__link"
+                title="تواصل معي عبر واتساب"
+              >
+                +20 127 488 7580
+              </a>
+            </div>
+
+            <!-- Email - البريد الإلكتروني -->
+            <div class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <a
+                href="mailto:gamalhal.chi@gmail.com"
+                class="contact__link"
+                title="أرسل لي بريد إلكتروني"
+              >
+                gamalhal.chi@gmail.com
+              </a>
+            </div>
+
+            <!-- Location - الموقع -->
+            <div class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-ar="مصر" data-en="Egypt">مصر</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links - روابط التواصل الاجتماعي -->
+        <div class="footer__social">
+          <h3 data-ar="تابعني" data-en="Follow Me">تابعني</h3>
+          <div class="social__links">
+            <a
+              href="https://www.facebook.com/gamal.hal"
+              target="_blank"
+              rel="noopener"
+              title="فيسبوك"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://twitter.com/gamalhal"
+              target="_blank"
+              rel="noopener"
+              title="تويتر"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gamal-hal-b7720419a/"
+              target="_blank"
+              rel="noopener"
+              title="لينكد إن"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" title="يوتيوب">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright - حقوق النشر -->
+      <div class="footer__bottom">
+        <p
+          data-ar="© 2024 جمال حال. جميع الحقوق محفوظة."
+          data-en="© 2024 Gamal Hal. All rights reserved."
+        >
+          © 2024 جمال حال. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./scripts.js"></script>
 </html>
